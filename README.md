@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/harsha-rvh/url-shortener)
-- Live Site URL: [Netlify](https://url-shortener-flame.vercel.app/)
+- Live Site URL: [Vercel](https://url-shortener-flame.vercel.app/)
 
 ## My process
 
