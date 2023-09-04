@@ -8,11 +8,9 @@ This is a solution to the [Shortly URL shortening Challenge challenge on Fronten
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+  - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
+ 
 
 ## Overview
 
@@ -34,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/SameerJS6/URL-Shortening-App)
-- Live Site URL: [Netlify](https://shrtco.de/JaAuI2)
+- Solution URL: [Github](https://github.com/harsha-rvh/url-shortener)
+- Live Site URL: [Netlify](https://url-shortener-flame.vercel.app/)
 
 ## My process
 
@@ -51,43 +49,3 @@ Users should be able to:
 - Mobile-first workflow
 - Semantic HTML5 markup
 - [Tailwind](https://tailwindcss.com/) - A Utility First Class based CSS Framework
-
-### What I learned
-
-- In short, while working on this project, I didn't learn a lot of new things, but I did get to practice fetching data from an API and storing it in a state. Overall, it was a pretty nice and easy project to build.
-
-- Here's the code I used to fetch data from the API:-
-
-```JavaScript react
-  const handleFetch = async () => {
-    try {
-      const response = await fetch(`${url}`);
-      if (!response.ok) {
-        throw new Error(
-          `This is an HTTP Error: The Status is ${response.status}`
-        );
-      }
-      let Data = await response.json();
-      console.log(Data.result);
-      setResultURL([
-        ...resultURL,
-        {
-          oldURL: Data.result.original_link,
-          shortenURL: Data.result.full_short_link,
-        },
-      ]);
-    } catch (error) {
-      setError(true);
-      console.log(error.message);
-    }
-  };
-```
-
-### Continued development
-
-- As using an API to fetch data is a practical way of working, I will be focusing more on API projects.
-
-## Author
-
-- Website - [Github](https://github.com/SameerJS6/)
-- Frontend Mentor - [@SameerJS6](https://www.frontendmentor.io/profile/sameerjs6)
